@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddlefy - Challenge Your Mind</title>
+    <meta name="description"
+        content="Discover Riddlefy, the captivating word game that challenges your mind. Get help, support, and learn more about our app.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-globes">
+        <div class="globe globe-1"></div>
+        <div class="globe globe-2"></div>
+        <div class="globe globe-3"></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Riddlefy</h1>
+            <a href="#support" class="nav-cta">Support</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero slide-up-element fade-in-section">
+            <div class="hero-content">
+                <span class="badge">Now Available</span>
+                <h2 class="hero-title">Challenge Your Mind with <span>Riddlefy</span></h2>
+                <p class="hero-subtitle">The most engaging word puzzle experience. Unravel mysteries, expand your
+                    vocabulary, and have fun.</p>
+                <div class="hero-actions">
+                    <a href="#screenshots" class="btn btn-primary">See the Game</a>
+                    <a href="#support" class="btn btn-secondary">Get Support</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="screenshots" class="screenshots-section fade-in-section">
+            <div class="section-header">
+                <h3>Sneak Peek</h3>
+                <p>Beautiful puzzles waiting to be solved</p>
+            </div>
+
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" id="prevBtn" aria-label="Previous">&larr;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track" id="track">
+                        <li class="carousel-slide current-slide">
+                            <img src="screenshots/IMG_6708.PNG" alt="Riddlefy Gameplay Screenshot 1" loading="lazy">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="screenshots/IMG_6709.PNG" alt="Riddlefy Gameplay Screenshot 2" loading="lazy">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="screenshots/IMG_6710.PNG" alt="Riddlefy Gameplay Screenshot 3" loading="lazy">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="screenshots/IMG_6712.PNG" alt="Riddlefy Gameplay Screenshot 4" loading="lazy">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="screenshots/IMG_6713.PNG" alt="Riddlefy Gameplay Screenshot 5" loading="lazy">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="screenshots/IMG_6714.PNG" alt="Riddlefy Gameplay Screenshot 6" loading="lazy">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carousel-btn next-btn" id="nextBtn" aria-label="Next">&rarr;</button>
+            </div>
+
+            <div class="carousel-nav" id="carouselNav">
+                <button class="carousel-indicator current-indicator" aria-label="Slide 1"></button>
+                <button class="carousel-indicator" aria-label="Slide 2"></button>
+                <button class="carousel-indicator" aria-label="Slide 3"></button>
+                <button class="carousel-indicator" aria-label="Slide 4"></button>
+                <button class="carousel-indicator" aria-label="Slide 5"></button>
+                <button class="carousel-indicator" aria-label="Slide 6"></button>
+                <button class="carousel-indicator" aria-label="Slide 7"></button>
+            </div>
+        </section>
+
+        <section id="support" class="support-section fade-in-section">
+            <div class="support-card glass-card">
+                <h3>Need Help?</h3>
+                <p>We're here for you. If you have any questions, feedback, or need assistance enjoying Riddlefy, please
+                    reach out to our support team.</p>
+                <br>
+                <a href="mailto:caninequartet@gmail.com" class="btn btn-primary email-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    caninequartet@gmail.com
+                </a>
+                <p class="response-time">We typically respond within 24 hours.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="year"></span> Riddlefy. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
